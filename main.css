@@ -1,5 +1,6 @@
 html,
 body {
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
 }
@@ -39,16 +40,24 @@ body {
   font-family: "Roboto", sans-serif;
 }
 input {
-  width: 575px;
+  /* position: absolute;
+  left: 500px;
+  top: 8px; */
+  width: 500px;
   height: 30px;
   border: 1px solid #ccc;
 }
 #enter {
+  /* position: absolute;
+  left: 1025px;
+  top: 8px; */
   width: 65px;
   border: 1px solid #ccc;
   height: 30px;
 }
+
 .th {
+  float: right;
   color: gray;
   font-size: 20px;
   display: flex;
@@ -60,6 +69,7 @@ input {
   color: #065fd4;
   margin-right: 15px;
   background-color: white;
+  margin-top: 5px;
 }
 .fa-user {
   font-size: 15px;
@@ -93,6 +103,27 @@ input {
   overflow-x: hidden;
   width: 240px;
 }
+.media {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  z-index: 1;
+  height: 100%;
+  overflow-x: visible;
+  width: 72px;
+  text-align: center;
+}
+.media a {
+  font-size: 13px;
+  color: gray;
+  text-decoration: none;
+  background-color: white;
+  padding: 20px;
+}
+#active2 {
+  color: red;
+}
+
 .sidebar::-webkit-scrollbar {
   width: 8px;
 }
@@ -186,9 +217,20 @@ iframe {
   padding-bottom: 10px;
 }
 #introduce {
-  padding-top: 0;
+  padding-top: 50px;
   padding-left: 15px;
   margin: 0 auto;
   color: black;
   text-decoration: none;
+}
+@media all and (max-width: 1320px) and (max) {
+  .sidebar {
+    display: none;
+  }
+  .contents {
+    margin-left: 80px;
+  }
+  .media {
+    display: flex;
+  }
 }
