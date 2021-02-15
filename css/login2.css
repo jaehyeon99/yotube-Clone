@@ -1,0 +1,54 @@
+html {
+  margin-top: 30vh;
+}
+fieldset {
+  margin: 0 auto;
+  width: 448px;
+  height: 500px;
+  text-align: center;
+  border: 1px solid #dadce0;
+  border-radius: 10px;
+}
+input {
+  font-size: 15px;
+  width: 366px;
+  height: 54px;
+  border: 1px solid #dadce0;
+  border-radius: 5px;
+}
+span {
+  color: #1a73e8;
+  position: relative;
+  top: 55px;
+  right: 130px;
+}
+input:focus {
+  outline: 2px solid #1a73e8;
+  border-radius: 5px;
+}
+#more {
+  float: left;
+  padding-left: 35px;
+  font-size: 15px;
+}
+#forget {
+  float: left;
+  margin-left: 40px;
+}
+p {
+  color: #5f6368;
+}
+#info {
+  margin-top: 20px;
+}
+#next {
+  position: relative;
+  top: 10px;
+  left: 145px;
+  background-color: #1a73e8;
+  color: #dadce0;
+  width: 76px;
+  height: 35px;
+  border: 1px solid #1a73e8;
+  border-radius: 5px;
+}

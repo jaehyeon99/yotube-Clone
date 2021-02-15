@@ -3,9 +3,9 @@
     <head>
         <meta charset="utf-8">
         <title>YouTube</title>
-        <link rel=" shortcut icon" href="favicon.ico">
-        <link rel="icon" href="favicon.ico">
-        <link rel="stylesheet" href="main.css">
+        <link rel=" shortcut icon" href="img/favicon.ico">
+        <link rel="icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="css/main.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;700&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/a144178b88.js" crossorigin="anonymous"></script>
@@ -13,7 +13,7 @@
     <body>
         <div class="menubar">
             <div class="logo">
-                <i id="youlogo" class="fab fa-youtube"></i><a href="#" id="name">&nbsp;Youtube</a><span id="kr">KR</span>
+               <i id="hambuger" class="fas fa-bars"></i> <i id="youlogo" class="fab fa-youtube"></i><a href="#" id="name">&nbsp;Youtube</a><span id="kr">KR</span>
             </div>
             <div class="search_bar">
                 <input type="search" placeholder="검색"><button type="submit" id="enter"><i class="fas fa-search"></i></button>
@@ -21,19 +21,19 @@
             <div class="th">
                 <i class="fas fa-th"></i> <i class="fas fa-ellipsis-v"></i>
                 <button id="login">
-                <i class="fas fa-user"></i><span id="word">로그인</span>
+                <a href="login.html"><i class="fas fa-user"></i><span id="word">로그인</span></a>
                 </button>
             </div>
         </div>
         <div class="container">
-            <div class="media">
+            <div id="media" class="media">
                 <a id="active2" href="#"><i class="fas fa-home"></i><br>홈</a>
                 <a href="#"><i class="fas fa-fire"></i><br>인기</a>
                 <a href="#"><i class="fas fa-book-reader"></i><br>구독</a>
                 <a href="#"><i class="fas fa-bookmark"></i><br>보관함</a>
                 <a href="#"><i class="fas fa-history"></i><br>시청기록</a>
             </div>
-            <div class="sidebar">
+            <div id="sidebar" class="sidebar">
                 <a id="active" href="#"><i class="fas fa-home"></i>홈</a>
                 <a href="#"><i class="fas fa-fire"></i>인기</a>
                 <a href="#"><i class="fas fa-book-reader"></i>구독</a>
@@ -82,7 +82,7 @@
             </div>
           
 
-           <div class="contents">
+           <div id="contents" class="contents">
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/dUDyy8urAsM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ThVxgqYVEsI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/cXB8rCW7lto" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -133,7 +133,7 @@
             <a href="#" id="introduce">내가 너 꼬실때 틀었던 노래 (𝐏𝐥𝐚𝐲𝐥𝐢𝐬𝐭)</a>
         </div>
         </div>
-
+        <script type="text/javascript" src="js/index.js"></script> 
     </body>
 
 </html>
